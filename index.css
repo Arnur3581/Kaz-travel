@@ -1,0 +1,429 @@
+/* Presets */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+html {
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  color: #5c5c5c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #373737;
+}
+
+button {
+  padding: 0.9em 1.4em;
+  font-size: 1.2em;
+  border-radius: 3em 1em;
+  transition: 0.5s;
+  background: transparent;
+}
+
+button:hover {
+  border-radius: 1em 3em;
+  background-color: #2d2828;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.background {
+  height: 100vh;
+  border-radius: 0em 0em 2em 2em;
+  background: url("./img/bali.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Header */
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.header__logo {
+  font-size: 2.5em;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 7%;
+  min-width: 40%;
+}
+
+.nav__link {
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.nav__link:hover {
+  transform: scale(1.2);
+}
+
+.nav__btn {
+  background: #fff;
+}
+/* Welcome */
+.welcome {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome__inner {
+  width: 80%;
+}
+
+.welcome__subtitle {
+  font-size: 2em;
+}
+
+.welcome__title {
+  font-size: 4em;
+  color: #000000;
+}
+
+.welcome__btn {
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+/* Tours */
+.tours {
+  width: 100%;
+}
+
+.tours__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 4em auto;
+}
+
+.tours__title {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.tours__row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3%;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.tours__card {
+  width: 20em;
+  height: 18.75em;
+  padding: 1.5em;
+  margin-bottom: 3em;
+  border-radius: 1em;
+  transition: 0.5s;
+}
+
+.tours__contry,
+.tours__price {
+  color: #ffffff;
+}
+
+.tours__card:hover {
+  transform: scale(1.1);
+}
+
+.tours__card:first-child {
+  background: linear-gradient(#0000005d, #0000005d), url("./img/Egypt.webp");
+  background-size: cover;
+}
+
+.tours__card:nth-child(2) {
+  background: linear-gradient(#0000005d, #0000005d), url("./img/Turkey.jpg");
+  background-size: cover;
+}
+
+.tours__card:nth-child(3) {
+  background: linear-gradient(#0000005d, #0000005d), url("./img/Maldives.webp");
+  background-size: cover;
+}
+
+.tours__card:nth-child(4) {
+  background: linear-gradient(#0000005d, #0000005d), url("./img/Thailand.jpg");
+  background-size: cover;
+}
+
+.tours__card:nth-child(5) {
+  background: linear-gradient(#0000005d, #0000005d), url("./img/Vietnam.webp");
+  background-size: cover;
+}
+
+.tours__card:nth-child(6) {
+  background: linear-gradient(#0000005d, #0000005d), url("./img/Indonesia.jpg");
+  background-size: cover;
+}
+
+.tours__card:nth-child(7) {
+  background: linear-gradient(#0000005d, #0000005d), url("./img/Malaysia.jpg");
+  background-size: cover;
+}
+
+.tours__card:nth-child(8) {
+  background: linear-gradient(#0000005d, #0000005d), url("./img/India.jpg");
+  background-size: cover;
+}
+
+.tours__card:nth-child(9) {
+  background: linear-gradient(#0000005d, #0000005d), url("./img/Uae.webp");
+  background-size: cover;
+}
+
+.tours__card:nth-child(10) {
+  background: linear-gradient(#0000005d, #0000005d), url("./img/Greece.jpg");
+  background-size: cover;
+}
+
+.tours__card:nth-child(11) {
+  background: linear-gradient(#0000005d, #0000005d), url("./img/Montenegro.jpg");
+  background-size: cover;
+}
+
+.tours__card:nth-child(12) {
+  background: linear-gradient(#0000005d, #0000005d), url("./img/Finland.webp");
+  background-size: cover;
+}
+
+.tours__btn {
+  border: 2px solid #2d2828;
+}
+
+/* About */
+.about {
+  width: 100%;
+}
+
+.about__inner {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5%;
+  width: 80%;
+  margin: 6em auto;
+}
+
+.about__content {
+  width: 50%;
+}
+
+.about__title {
+  font-size: 2.2em;
+}
+
+.about__subtitle {
+  font-size: 1.7em;
+  line-height: 2;
+}
+
+.about__text {
+  font-size: 1.2em;
+}
+
+.about__img {
+  height: 22em;
+  border-radius: 1em;
+}
+/* Benefits */
+.benefits {
+  width: 100%;
+}
+
+.benefits__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 7em auto;
+}
+
+.benefits__title {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.benefits__row {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.benefits__card {
+  width: 20em;
+  min-height: 4em;
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 2px solid #373737;
+  border-radius: 1em;
+  transition: 0.5s;
+}
+
+.benefits__card:hover {
+  transform: scale(1.1);
+  background: #2d2828;
+}
+
+.benefits__card:hover .benefits__card-title,
+.benefits__card:hover .benefits__text {
+  color: #ffffff;
+}
+
+.benefits__card:hover .benefits__text {
+  color: #bfbfbf;
+}
+
+.benefits__icon {
+  font-size: 4em;
+  margin-left: -0.2em;
+}
+
+.benefits__text {
+  font-size: 1.2em;
+}
+
+/* Rates */
+.rates {
+  width: 100%;
+}
+
+.rates__inner {
+  width: 80%;
+  margin: 7em auto;
+}
+
+.rates__title {
+  font-size: 2.5em;
+  margin-bottom: 0.6em;
+  text-align: center;
+}
+
+.rates__row {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+
+.rates__comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 5rem;
+}
+
+.rates__text {
+  width: 20em;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.rates__circle {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5em;
+  border-radius: 100%;
+  background-color: #373737;
+}
+
+.rates__name {
+  display: flex;
+  align-items: center;
+  font-size: 1.6em;
+  margin-top: 0.5em;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  min-height: 20em;
+  background: linear-gradient(#00000082, #00000082), url("./img/thailand2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer__inner {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2.5em;
+  color: #fff;
+}
+
+.footer__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  color: #fff;
+}
+
+.footer__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1em;
+  height: 1em;
+  background: #fff;
+  padding: 1em;
+  border-radius: 100%;
+}
+
+.footer__copyright {
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 2em;
+}
